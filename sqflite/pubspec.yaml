@@ -18,6 +18,9 @@ flutter:
         pluginClass: SqfliteSqlCipherPlugin
       macos:
         pluginClass: SqfliteSqlCipherPlugin
+      ohos:
+        package: io.flutter.plugins.sqflite
+        pluginClass: SqfliteSqlCipherPlugin
 
 
 dependencies:
@@ -25,7 +28,11 @@ dependencies:
     sdk: flutter
   synchronized: '>=3.0.0 <4.0.0'
   path: '>=1.8.0 <3.0.0'
-  sqflite_common: ^2.5.0
+  # sqflite_common: ^2.5.0
+  sqflite_common:
+    git:
+      url: https://gitcode.com/openharmony-sig/flutter_sqflite.git
+      path: ./sqflite_common
 
 dev_dependencies:
   lints: ^6.0.0
