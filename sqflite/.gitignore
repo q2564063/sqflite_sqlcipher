@@ -12,7 +12,7 @@ doc/api/
 .local/
 
 # local flutter install (travis)
-flutter
+/flutter
 
 # Conventional directory for build outputs
 build/
